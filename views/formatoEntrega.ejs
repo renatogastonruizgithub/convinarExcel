@@ -49,5 +49,22 @@
 
 <script src="./js/download.js">
 </script> 
+<script>
+    document.getElementById('copyButton').addEventListener('click', function() {
+    copyTableToClipboard('dataTable')
+    alert('copyButton')
+});
+
+function copyTableToClipboard(tableId) {
+    const table = document.getElementById(tableId);
+    const range = document.createRange();
+    range.selectNode(table);
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
+    document.execCommand('copy');
+    window.getSelection().removeAllRanges();
+    
+}
+</script>
 </body>
 </html>
