@@ -15,9 +15,10 @@
             <thead >
                 <tr>
                 
-                <th scope="col">Part number</th>                
+                <th scope="col">Part number</th>
+                <th scope="col">lote productivo</th>                 
                 <th scope="col">producto</th>
-                <th scope="col">lote productivo</th> 
+                
                
                 <th scope="col">lote esteril</th>
                 <th scope="col">OF</th>
@@ -61,6 +62,11 @@ function copyTableToClipboard(tableId) {
     window.getSelection().removeAllRanges();
     
 }
+document.getElementById('volver').addEventListener('click', function() {
+   
+   window.location.href = '/';
+});
+
 </script>
 </body>
 </html>

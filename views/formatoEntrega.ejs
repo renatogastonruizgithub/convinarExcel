@@ -14,6 +14,7 @@
         <table class="table table-sm table-dark table-hover" style="font-size: 10px;" >
             <thead >
                 <tr>
+                <th scope="col">requiere ensayo</th> 
                 <th scope="col">N° de contendores</th>    
                 <th scope="col">Part number</th>
                 <th scope="col">OF</th>
@@ -65,6 +66,11 @@ function copyTableToClipboard(tableId) {
     window.getSelection().removeAllRanges();
     
 }
+document.getElementById('volver').addEventListener('click', function() {
+   
+   window.location.href = '/';
+});
+
 </script>
 </body>
 </html>
